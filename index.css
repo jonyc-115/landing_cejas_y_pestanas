@@ -1,0 +1,323 @@
+*{
+    margin: 0;
+    font-family: var(--open-sans);
+}
+:root{
+    --sombra: 0 0 20px 3px #482d4a6a;
+    --open-sans: 'Open Sans', sans-serif;
+}
+
+
+.cepa{
+    height: 20%;
+    background-color: #de3fa1;
+}
+.container{
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+/*Diseño del header*/
+.header__flex{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cepa__logo{
+    width: 70%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+.ceja__logo{
+    width: 100%;
+    display: block;
+}
+.cepa__title{
+    font-size: 40px;
+    text-align: center;
+    padding: 10px;
+    color: #fff;
+    font-family: Helvetica, sans-serif;
+}
+.title_mot{
+    font-size: 20px;
+    text-align: center;
+    margin-top: 60px;
+    padding: 10px;
+    color: rgb(95, 81, 87);
+}
+
+
+
+
+/*Diseño reproductor*/
+
+.container__reproductor{
+    width: 85%;
+    max-width: 1100px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+.margin__reproductor{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.reproductor{
+    border-radius: 3px;
+    box-shadow: var(--sombra);
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 7px 45px;
+    box-sizing: border-box;
+}
+
+.fila1{
+    width: 100%;
+}
+.fila3{
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    background-color: rgba(0, 0, 0, 0.829);
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 50px;
+    align-items: center;
+}
+.izquierda{
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 40px);
+    grid-gap: 8px;
+}
+.margin_icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.margin_icon1{
+    margin-left: 2px;
+    color: #fff;
+    font-size: 17px;
+    padding: 5px;
+}
+.margin_icon i{
+    padding-left: 5px;
+    font-size: 14px;
+    color: #fff;
+    border-radius: 100%;
+    padding: 11px;
+    margin-left: 15px;
+}
+.margin_icon1 i{
+    padding-left: 5px;
+    font-size: 14px;
+    color: #fff;
+    border-radius: 100%;
+    padding: 11px;
+    margin-right: 7px;
+}
+.margin_icon i:hover{
+    cursor: pointer;
+    background-color: #46464684;
+}
+.margin_icon1 i:hover{
+    cursor: pointer;
+    background-color: #46464684;
+}
+
+.barra1{
+    height: 7px;
+    background-color: silver;
+}
+.barra2{
+    border-radius: 2px;
+    background-color: rgb(236, 17, 61);
+    height: 100%;
+    width: 0%;
+}
+video{
+    height: 100%;
+    width: 100%;
+    max-height: calc(67vh - 120px);
+    display: block;
+}
+.estado{
+    width: 150px;
+    color: #000;
+}
+
+body{
+    background-color: rgba(183, 183, 183, 0.422);
+}
+main{
+    position: relative;
+    z-index: 60;
+}
+
+/*Boton de compra*/
+.b__compra{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 70px;
+    width: 100%;
+}
+.b__compra a{
+    letter-spacing: 0.5px;
+    font-size: 19px;
+    font-weight: bolder;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+    border: 2px solid rgb(53, 135, 35);
+    padding: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    background-color: #5c980e;
+}
+.compra__ahora{
+    border-radius: 10px;
+    width: 300px;
+    height: 35px;
+}
+
+/*Texto*/
+.text_ep{
+    font-size: 20px;
+    padding: 50px 0;
+    margin-bottom: 50px;
+}
+.title_centro{
+    color: #c03d00;
+    text-align: center;
+    font-size: 23px;
+}
+.paragraph_col{
+    font-size: 20px;
+}
+.subtitle_text{
+    color: #c03d00;
+    font-size: 27px;
+}
+
+
+
+/*Recuadros*/
+
+.recuadros{
+    margin: 0 auto;
+    max-width: 1100px;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.recuadro{
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    display: flex;
+    box-sizing: border-box;
+    padding: 5px;
+    margin: 20px;
+    width: 100%;
+    max-width: 370px;
+    height: 90px;
+    border: 3px solid #c03d00;
+    border-radius: 7px;
+    background-color: rgba(32, 29, 29, 0.9);
+    color: rgb(250, 235, 235);
+}
+.recuadro__logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 24%;
+}
+.recuadro__text{
+    box-sizing: border-box;
+    padding: 3px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 75%;
+}
+/*diploma*/
+.margin_flex{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.diploma_container{
+    width: 100%;
+    max-width: 1000px;
+}
+.diploma_img{
+    margin-top: 50px;
+    border-radius: 5px;
+    width: 100%;
+    display: block;
+}
+
+/*imagen cara-producto*/
+.cara_container{
+    width: 100%;
+    max-width: 600px;
+}
+.cara_img{
+    box-shadow: 0 0 30px 3px #482d4a3b;
+    margin-top: 75px;
+    border-radius: 10px;
+    width: 100%;
+    display: block;
+}
+.price{
+    margin-top: 25px;
+    font-size: 43px;
+    color: #c03d00;
+    margin-bottom: 70px;
+}
+
+
+
+
+
+
+/*footer*/
+footer{
+    background-color: rgb(51, 51, 51);
+}
+.footer_flex{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.container_footer{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.footer_img{
+    width: 70%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+.img_product{
+    margin-top: 75px;
+    margin-bottom: 30px;
+    width: 100%;
+    display: block;
+}
+
+
+
+
